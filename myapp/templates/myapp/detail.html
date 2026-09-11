@@ -1,0 +1,20 @@
+{% extends 'myapp/base.html' %}
+{% block body %}
+<div class="m-10 flex">
+    <div>
+        <img class="w-128" src="{{item.item_image}}" alt="">
+    </div>
+    <div class="ml-8">
+        <div class="font-bold text-4xl">{{item.item_name}}</div>
+        <div class="font-bold text-2xl text-green-500" >${{item.items_price}}</div>
+        <div>{{item.item_desc}}</div>
+        <div class="mt-8">
+            <a class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold rounded-md px-12 py-2" href="/myapp/">Edit</a>
+            <a class="bg-red-500 hover:bg-red-600 text-white font-bold rounded-md px-12 py-2" href="/myapp/">Delete</a>
+        </div>
+    </div>
+
+    
+</div>
+
+{% endblock %}
